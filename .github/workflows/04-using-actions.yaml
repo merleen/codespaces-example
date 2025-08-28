@@ -1,0 +1,10 @@
+name: 04 using actions
+
+on: push
+
+jobs:
+  build:
+    steps:
+      - name: checkout code
+
+      - name: printing folders
