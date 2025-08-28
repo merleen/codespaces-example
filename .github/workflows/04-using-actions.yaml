@@ -8,6 +8,9 @@ jobs:
     steps:
       - name: checkout code
         uses: actions/checkout@v4
-
-      - name: printing folders
-        run: ls -al
+      - name: setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: '22.x'
+      - name: install dependencies
+        run: npm ci
