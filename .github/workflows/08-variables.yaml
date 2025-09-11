@@ -26,7 +26,7 @@ jobs:
           echo "overwritten env var: ${{env.OVERWRITTEN}}"
       - name: overwrite job var
         env:
-          OVERWRITTEN: 'overwritten at job level'
+          OVERWRITTEN: 'overwritten at step level'
         run: |
           echo "step env var: ${{env.OVERWRITTEN}}"
 
