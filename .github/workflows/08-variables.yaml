@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
 env:
-  WORKFLOW_VAR: 'i am a job env var'
+  WORKFLOW_VAR: 'i am a workflow env var'
   OVERWRITTEN: 'i will be overwritten'
 
 jobs:
