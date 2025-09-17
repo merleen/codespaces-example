@@ -31,7 +31,7 @@ jobs:
     runs-on: ubuntu-latest
     if: ${{ !inputs.dry-run }}
     environment: ${{inputs.target}}
-    needs: builds
+    needs: build
     steps:
       - name: deploy
         run: echo "deploying to ${{inputs.target}}"
