@@ -7,14 +7,14 @@ on:
         type: choice
         options:
           - success
-          - failue
+          - failure
         default: success
 
 jobs:
   build:
     runs-on: ubuntu-latest
     outputs:
-      build_status: ${{steps.build.outputs.status}}
+      build-status: ${{steps.build.outputs.status}}
     steps:
       - name: print GITHUB_OUTPUT path
         run: echo $GITHUB_OUTPUT
