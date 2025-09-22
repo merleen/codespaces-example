@@ -21,9 +21,6 @@ jobs:
         run: echo $GITHUB_OUTPUT
       - name: Build
         id: build
-        outputs:
-          output1: value1
-          output2: value2
         run: |
           echo $GITHUB_OUTPUT
           echo "status=${{inputs.build-status}}" >> "$GITHUB_OUTPUT"
