@@ -28,6 +28,8 @@ jobs:
         uses: actions/checkout@v4
       - name: setup node
         uses: actions/setup-node@v3
+        with:
+          node-version: ${{inputs.node-version}}
       - name: calculate cache key
         id: cache-key
         run: |
